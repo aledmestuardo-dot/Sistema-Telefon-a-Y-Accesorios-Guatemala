@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{163AF4AA-EDC1-4A3C-AD9D-5F8A15DDA2C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SistemaTelefonia.Entidad</RootNamespace>
+    <AssemblyName>SistemaTelefonia.Entidad</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UsuariosEntidad.cs" />
+    <Compile Include="SucursalesEntidad.cs" />
+    <Compile Include="EmpleadosEntidad.cs" />
+    <Compile Include="DashboardEntidad.cs" />
+    <Compile Include="ClientesEntidad.cs" />
+    <Compile Include="PlanesEntidad.cs" />
+    <Compile Include="LineasEntidad.cs" />
+    <Compile Include="ProveedoresEntidad.cs" />
+    <Compile Include="MarcasEntidad.cs" />
+    <Compile Include="EquiposEntidad.cs" />
+    <Compile Include="ComprasEntidad.cs" />
+    <Compile Include="DetalleCompraEntidad.cs" />
+    <Compile Include="InventarioEntidad.cs" />
+    <Compile Include="VentasEntidad.cs" />
+    <Compile Include="DetalleVentaEntidad.cs" />
+    <Compile Include="FacturacionEntidad.cs" />
+    <Compile Include="DetalleFacturaEntidad.cs" />
+    <Compile Include="PagosEntidad.cs" />
+    <Compile Include="CardexEntidad.cs" />
+    <Compile Include="ReclamosEntidad.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OrigenBaseDatos.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
